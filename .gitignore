@@ -1,0 +1,35 @@
+# Ignorar archivos específicos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/  # Tu entorno virtual (si está dentro de la raíz del proyecto)
+venv/ # Otro nombre común para el entorno virtual
+*.egg-info/
+.pytest_cache/
+
+# Ignorar archivos de Django
+#media/     # La carpeta de subida de archivos (si no quieres versionarla)
+#static/    # Archivos estáticos recolectados (si no quieres versionarlos)
+
+# Archivos de configuración sensible (ej. claves secretas de Django)
+# Si tienes un archivo con tu SECRET_KEY u otras credenciales, ¡añádelo aquí!
+# Por ejemplo, si tienes un archivo llamado local_settings.py:
+# mi_biblioteca_musical/local_settings.py
+
+# Ignorar archivos específicos de Node.js (tu frontend)
+node_modules/ # ¡Importante! No subir las dependencias de Node.js
+dist/         # Carpeta de compilación de Vite
+.vite/        # Cache de Vite
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env.local    # Variables de entorno locales (si las usas en el frontend)
+
+# Ignorar Docker (opcional, si solo quieres el Dockerfile y no las imágenes/volúmenes generados)
+.dockerignore # Aunque generalmente queremos el .dockerignore, esto es para evitar recursión
+*.log
+*.swp
+.DS_Store # macOS
+Thumbs.db # Windows

@@ -1,0 +1,16 @@
+Django==5.*
+djangorestframework==3.*
+django-allauth==65.*
+psycopg2-binary==2.*
+python-decouple==3.*
+celery==5.*
+redis==6.*
+django-filter==25.*
+requests==2.*
+pillow==11.* # Para FileField/ImageField
+# Para Celery Beat
+django-celery-beat==2.*
+# Para Gunicorn en producción
+gunicorn==23.*
+qrcode==8.*
+whitenoise==6.*
